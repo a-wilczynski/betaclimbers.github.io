@@ -1,0 +1,50 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+section {
+    height: 100vh;
+}
+
+div {
+    border: 1px black solid;
+}
+
+.logo {
+    position: fixed;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    right: 1em;
+    color: white;
+
+    .nav-button {
+        border: 1px white solid;
+    }
+}
+
+
+.section-1 {
+    display: flex;    
+    background-color: #2C3333;
+    height: 100%;
+
+    .hero-left-side {
+        display: flex;
+        align-items: center;
+        flex: 2;
+        padding: 2em;
+
+        .hero-message {
+
+        }
+    }
+
+    .hero-right-side {
+        flex: 3;
+        background: url('images/climber.jpg');
+        background-size: 100% auto;
+    }
+}
