@@ -1,14 +1,15 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Open Sans';
+    color: #F5F2E7;
     margin: 0;
 }
 section {
     height: 100vh;
 }
 
-div {
-    border: 1px black solid;
-}
+// div {
+//     // border: 1px black solid;
+// }
 
 .logo {
     position: fixed;
@@ -21,30 +22,75 @@ div {
     color: white;
 
     .nav-button {
-        border: 1px white solid;
+        padding: 1em;
+        font-size: 100%;
+
+        a {
+            font-family: 'Open Sans Condensed';
+            text-decoration: none;
+            font-size: 1.3rem;
+            color: #F5F2E7;
+            opacity: 0.6;
+
+            &:hover {
+                opacity: 1;
+                text-decoration: underline 0.15em;
+            }
+        }
     }
 }
 
+h1 {
+    font-family: 'Open Sans Condensed';
+    font-weight: 700;
+    color: #F5F2E7;
+    font-size: 2.5rem;
+}
+
+p {
+    opacity: 0.5;
+    margin-top: -2em
+}
+
+.blue-text {
+    color: #2666CF;
+}
 
 .section-1 {
     display: flex;    
     background-color: #2C3333;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
+
 
     .hero-left-side {
         display: flex;
         align-items: center;
-        flex: 2;
-        padding: 2em;
-
+        flex: 4;
         .hero-message {
-
+            text-align: center;
+            padding: 4em;
         }
     }
 
     .hero-right-side {
-        flex: 3;
-        background: url('images/climber.jpg');
-        background-size: 100% auto;
+        flex: 7;
+        position: flex;
+        align-items: stretch;
+
+        .image {
+            height: 100vh;
+            background: url('images/climber4.jpg');
+            background-size: 100% auto;
+            background-position-y: 20%;
+
+            .gradient {
+                width: 100%;
+                height: 100vh;
+                background: rgb(44,51,51);
+                background: linear-gradient(90deg, rgba(44,51,51,1) 0%, rgba(32,36,40,0) 100%); 
+                display: none;
+            }
+        }
     }
 }
