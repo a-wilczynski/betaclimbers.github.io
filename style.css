@@ -3,7 +3,7 @@ body {
   color: #F5F2E7;
   margin: 0 auto;
   padding: 0;
-  background-color: #9fcccc;
+  background-color: #2C3333;
 }
 
 .wrapper section {
@@ -66,6 +66,16 @@ p {
 
 .blue-text {
   color: #2666CF;
+}
+
+.section-title {
+  position: absolute;
+  top: 5vh;
+  left: 35vh;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 10vh;
+  opacity: 0.5;
 }
 
 .section-1 {
@@ -223,5 +233,138 @@ p {
 .image-line {
   vertical-align: top;
   height: 100%;
+}
+
+.section-3 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.section-3 .background-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("images/climber-section-3.jpg");
+  background-size: 100% auto;
+  mix-blend-mode: luminosity;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.section-3 .trainer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 16vh;
+  bottom: 18vh;
+  gap: 10vh;
+}
+
+.section-3 .trainer-wrapper .trainer-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  height: 30vh;
+  width: 40vh;
+  border: 5px #2666CF solid;
+  background-color: rgba(136, 136, 136, 0.3);
+  border-radius: 10%;
+  padding-top: 12vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+
+.section-3 .trainer-wrapper .trainer-box img {
+  position: absolute;
+  top: -10vh;
+  left: 12vh;
+  height: 20vh;
+  border-radius: 50%;
+}
+
+.section-3 .trainer-wrapper .trainer-box h1 {
+  font-size: 4vh;
+}
+
+.section-3 .trainer-wrapper .trainer-box p {
+  font-size: 3vh;
+}
+
+.section-4 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-4 .bg-lay1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section-4 .bg-lay2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.section-4 .bg-lay1-img, .section-4 .bg-lay2-img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.section-4 .contact {
+  position: relative;
+  height: 70vh;
+  width: 30vw;
+  background-color: #F5F2E7;
+  z-index: 100;
+  border-radius: 10%;
+  opacity: 0.6;
+}
+
+.section-4 .contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  padding: 10% 5% 0% 5%;
+  height: 75%;
+  width: auto;
+}
+
+.section-4 .contact .normal {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.section-4 .contact .main {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
 }
 /*# sourceMappingURL=style.css.map */
